@@ -12,16 +12,84 @@ body{
 }
 
 .posts-container{
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
 }
 
 .post{
-    height: 250px;
-    background: red;
+    width: 100%;
+    min-height: 250px;
+    height: auto;
+    background: rgb(225, 225, 255);
     border-radius: 12px;
     margin: 20px;
-    box-shadow: 4px 2px 4px rgba(0,0,0,0.5);
+    box-shadow: 0px 3px 4px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+
+.title{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.post button{
+    width: 50%;
+    height: 40px;
+    border-radius: 30px;
+    border: none !important;
+    margin-top: 30px;
+    background: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.comment{
+    width: 90%;
+    min-height: 60px;
+    background: white;
+    border-radius: 10px;
+    margin-top: 25px;
+    display: flex;
+    text-align: start;
+    padding: 10px;
+}
+
+.comment img{
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+}
+
+.msg-container{
+    flex: 1;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.title-msg{
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.msg{
+    font-size: 14px;
+}
+
+.email{
+    width: 100%;
+    text-align: right;
+    font-size: 12px;
+    margin-top: 10px;
+    color: rgb(95, 93, 93);
 }
