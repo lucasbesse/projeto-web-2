@@ -40,7 +40,7 @@ body{
     margin-bottom: 25px;
 }
 
-.post button{
+.post button, .ver-todos{
     width: 50%;
     height: 40px;
     border-radius: 30px;
@@ -55,7 +55,7 @@ body{
     width: 90%;
     min-height: 60px;
     background: white;
-    border-radius: 10px;
+    border-radius: 1px 20px 20px 20px;
     margin-top: 25px;
     display: flex;
     text-align: start;
@@ -88,8 +88,28 @@ body{
 
 .email{
     width: 100%;
-    text-align: right;
+    text-align: left;
     font-size: 12px;
-    margin-top: 10px;
+    margin-top: 12px;
     color: rgb(95, 93, 93);
+}
+
+.ver-todos{
+    width: 280px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    background: #343466;
+}
+
+button img{
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
 }
