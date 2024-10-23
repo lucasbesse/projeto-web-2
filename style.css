@@ -54,6 +54,7 @@ body{
     flex-direction: column;
     gap: 15px;
     padding-top: 15px;
+    width: 100%;
 }
 
 .comment{
