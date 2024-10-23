@@ -8,29 +8,27 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    padding: 30px 0;
 }
 
 .posts-container{
     width: 30%;
+    min-width: 450px;
     display: flex;
     flex-direction: column;
+    gap: 30px;
 }
 
 .post{
     width: 100%;
-    min-height: 250px;
-    height: auto;
     background: rgb(225, 225, 255);
     border-radius: 12px;
-    margin: 20px;
     box-shadow: 0px 3px 4px rgba(0,0,0,0.5);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 20px;
-    position: relative;
 }
 
 
@@ -51,12 +49,17 @@ body{
     cursor: pointer;
 }
 
+.comments-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 15px;
+}
+
 .comment{
-    width: 90%;
     min-height: 60px;
     background: white;
     border-radius: 10px;
-    margin-top: 25px;
     display: flex;
     text-align: start;
     padding: 10px;
@@ -92,4 +95,8 @@ body{
     font-size: 12px;
     margin-top: 10px;
     color: rgb(95, 93, 93);
+}
+
+.hide-comments {
+    display: none;
 }
